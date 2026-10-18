@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Task Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Aditya todo-list</h1>
+            <div class="add-task-container">
+                <input type="text" id="task-input" placeholder="What needs to be done?">
+                <button id="add-btn">Add Task</button>
+            </div>
+        </header>
+
+        <main class="board">
+            <!-- To Do Column -->
+            <div class="column" data-status="todo">
+                <div class="column-header">
+                    <h2>To Do</h2>
+                </div>
+                <div class="task-list" id="todo-list"></div>
+            </div>
+
+            <!-- In Progress Column -->
+            <div class="column" data-status="in-progress">
+                <div class="column-header">
+                    <h2>In Progress</h2>
+                </div>
+                <div class="task-list" id="in-progress-list"></div>
+            </div>
+
+            <!-- Done Column -->
+            <div class="column" data-status="done">
+                <div class="column-header">
+                    <h2>Done</h2>
+                </div>
+                <div class="task-list" id="done-list"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
